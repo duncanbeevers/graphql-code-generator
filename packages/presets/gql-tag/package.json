@@ -1,6 +1,6 @@
 {
   "name": "@graphql-codegen/gql-tag-preset",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "GraphQL Code Generator preset for gql magic.",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "@graphql-codegen/typed-document-node": "1.18.10",
     "@graphql-codegen/typescript": "1.23.0",
     "@graphql-codegen/typescript-operations": "1.18.4",
-    "@graphql-codegen/gql-tag": "0.0.1",
+    "@graphql-codegen/gql-tag": "0.0.0",
     "tslib": "2.3.0"
   },
   "peerDependencies": {
