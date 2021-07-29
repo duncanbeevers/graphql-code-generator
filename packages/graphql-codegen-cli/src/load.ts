@@ -13,7 +13,7 @@ import { JsonFileLoader } from '@graphql-tools/json-file-loader';
 import { UrlLoader } from '@graphql-tools/url-loader';
 import { ApolloEngineLoader } from '@graphql-tools/apollo-engine-loader';
 import { PrismaLoader } from '@graphql-tools/prisma-loader';
-import { join } from 'path';
+import { join, extname } from 'path';
 
 export const defaultSchemaLoadOptions = {
   assumeValidSDL: true,
@@ -88,9 +88,18 @@ export async function loadDocuments(
     new GraphQLFileLoader(),
   ];
 
+  const ignore: Array<string> = [];
+  for (const generatePath of Object.keys(config.generates)) {
+    if (extname(generatePath) === '') {
+      // we omit paths that don't resolve to a specific file
+      continue;
+    }
+    ignore.push(join(process.cwd(), generatePath));
+  }
+
   const loadedFromToolkit = await loadDocumentsToolkit(documentPointers, {
     ...defaultDocumentsLoadOptions,
-    ignore: Object.keys(config.generates).map(p => join(process.cwd(), p)),
+    ignore,
     loaders,
     ...config,
     ...config.config,
