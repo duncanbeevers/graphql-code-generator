@@ -400,6 +400,4 @@ generates:
   ./dev-test/gql-tag-operations/gql:
     schema: ./dev-test/gql-tag-operations/schema.graphql
     documents: './dev-test/gql-tag-operations/src/**/*.ts'
-    preset: gql-tag-preset
-    plugins:
-      - gql-tag
+    preset: gql-tag-operations-preset
