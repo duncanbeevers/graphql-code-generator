@@ -1,5 +1,5 @@
 import { Source } from '@graphql-tools/utils';
-import { SourceWithOperations, OperationOrFragment } from '@graphql-codegen/gql-tag';
+import { SourceWithOperations, OperationOrFragment } from '@graphql-codegen/gql-tag-operations';
 export function processSources(sources: Array<Source>) {
   const sourcesWithOperations: Array<SourceWithOperations> = [];
 

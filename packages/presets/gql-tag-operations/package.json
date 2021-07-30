@@ -1,11 +1,11 @@
 {
-  "name": "@graphql-codegen/gql-tag-preset",
+  "name": "@graphql-codegen/gql-tag-operations-preset",
   "version": "0.0.0",
   "description": "GraphQL Code Generator preset for gql magic.",
   "repository": {
     "type": "git",
     "url": "https://github.com/dotansimha/graphql-code-generator.git",
-    "directory": "packages/presets/gql-tag"
+    "directory": "packages/presets/gql-tag-operations"
   },
   "license": "MIT",
   "scripts": {
@@ -21,7 +21,7 @@
     "@graphql-codegen/typed-document-node": "1.18.10",
     "@graphql-codegen/typescript": "1.23.0",
     "@graphql-codegen/typescript-operations": "1.18.4",
-    "@graphql-codegen/gql-tag": "0.0.0",
+    "@graphql-codegen/gql-tag-operations": "0.0.0",
     "tslib": "2.3.0"
   },
   "peerDependencies": {

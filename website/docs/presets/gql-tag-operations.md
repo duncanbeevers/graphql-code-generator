@@ -1,6 +1,6 @@
 ---
-id: gql-tag
-title: gql-tag
+id: gql-tag-operations
+title: gql-tag-operations
 ---
 
 This preset generates typings for your inline `gql` function usages, without having to manually specify import statements for the documents. All you need to do is import your `gql` function and run codegen in watch mode.
@@ -28,7 +28,7 @@ const TweetsQueryWithFragment = gql(/* GraphQL */ `
 `);
 ```
 
-{@import ../generated-config/gql-tag-preset.md}
+{@import ../generated-config/gql-tag-operations-preset.md}
 
 ## Getting Started
 
@@ -41,9 +41,7 @@ documents:
   - '!src/gql/**/*'
 generates:
   ./src/gql/:
-    preset: gql-tag-preset
-    plugins:
-      - gql-tag
+    preset: gql-tag-operations-preset
 ```
 
 It is also recommended, that you link `./src/gql` to `@app/gql`, so you can import your gql function easily from anywhere within your app.

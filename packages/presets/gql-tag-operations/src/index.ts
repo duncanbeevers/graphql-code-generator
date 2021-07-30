@@ -4,7 +4,7 @@ import * as typedDocumentNodePlugin from '@graphql-codegen/typed-document-node';
 import * as typescriptOperationPlugin from '@graphql-codegen/typescript-operations';
 import * as typescriptPlugin from '@graphql-codegen/typescript';
 
-import * as gqlTagPlugin from '@graphql-codegen/gql-tag';
+import * as gqlTagPlugin from '@graphql-codegen/gql-tag-operations';
 import { processSources } from './process-sources';
 
 export type GqlTagConfig = {};

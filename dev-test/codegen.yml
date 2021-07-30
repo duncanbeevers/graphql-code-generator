@@ -397,9 +397,9 @@ generates:
       gqlImport: graphql-tag
       hooksImportFrom: '@apollo/react-hooks'
       withMutationFn: false
-  ./dev-test/gql-tag/gql:
-    schema: ./dev-test/gql-tag/schema.graphql
-    documents: './dev-test/gql-tag/src/**/*.ts'
+  ./dev-test/gql-tag-operations/gql:
+    schema: ./dev-test/gql-tag-operations/schema.graphql
+    documents: './dev-test/gql-tag-operations/src/**/*.ts'
     preset: gql-tag-preset
     plugins:
       - gql-tag
